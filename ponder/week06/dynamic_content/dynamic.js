@@ -45,14 +45,14 @@ const movies = [
 
         // Code for going through each movie and creating content for that movie
         const card = `
-            <article class="movie">
+            <article class="movie-card">
               <h2>${movie.title}</h2>
               <img src="${movie.imgSrc}" alt="${movie.imgAlt}">
-              <p><strong>Release Date:</strong>${movie.date}</p>
-              <p><strong>Recommended Age:</strong>${movie.ages}</p>
-              <p><strong>Genre:</strong>${movie.genre}</p>
-              <p><strong>Rating:</strong><span>${movie.stars}</span></p>
-              <p id='desc'>${movie.description}</p>
+              <p><strong>Release Date:</strong> ${movie.date}</p>
+              <p><strong>Recommended Age:</strong> ${movie.ages}</p>
+              <p><strong>Genre:</strong> ${movie.genre}</p>
+              <p><strong>Rating:</strong><span> ${movie.stars}</span></p>
+              <p id='desc'> ${movie.description}</p>
             </article>
     `;
 
