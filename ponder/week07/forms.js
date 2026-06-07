@@ -52,6 +52,30 @@ function isDateValid() {
     return date > todayDate;
 }
 
+const type = document.querySelector("#type");
+const extraContainer = document.querySelector("#extraContainer");
+const extraLabel = document.querySelector("#extraLabel");
+
+function updateExtraField() {
+
+    const value = type.value;
+
+    if (value === "student") {
+        extraContainer.hidden = false;
+        extraLabel.textContent = "Student I#";
+    }
+    else if (value === "guest") {
+        extraContainer.hidden = false;
+        extraLabel.textContent = "Access Code";
+    }
+    else {
+        extraContainer.hidden = true;
+    }
+}
+
+type.addEventListener("change", updateExtraField);
+updateExtraField();
+
 // Add event listener to the form to detect submit
 form.addEventListener("submit", event => {
   event.preventDefault();

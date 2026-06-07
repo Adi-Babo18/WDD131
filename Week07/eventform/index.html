@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Form</title>
+    <meta name="Author" content="Ariana Espinoza">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="event.css">
+    <script src="event.js" defer></script>
+</head>
+<body>
+    <main class="wrapper">
+        <h1>Event Ticket Registration</h1>
+        <form id="eventForm">
+            <div class="field full">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" required>
+            </div>
+            <div class="field">
+                <label for="eventDate">Event Date</label>
+                <input id="eventDate" name="eventDate" type="date" required>
+            </div>
+            <div class="field">
+                <label for="type">Type</label>
+                <select id="type" name="type" required>
+                    <option value="">Choose One</option>
+                    <option value="student">Student</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+            <div id="extraContainer" class="field full" hidden>
+                <label id="extraLabel" for="extraInput"></label>
+                <input id="extraInput" name="extraInput" type="text">
+            </div>
+            <button class="full" type="submit">Get Ticket</button>
+        </form>
+        <section id="output" aria-live="polite"></section>
+    </main>
+</body>
+</html>
