@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Ariana Espinoza">
+    <title>Character Card</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="card.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="A fantasy character card built with JavaScript objects.">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/images/character.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="A fantasy character card built with JavaScript objects.">
+    <meta name="twitter:image" content="https://yourwebsite.com/images/character.jpg">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <img
+            id="characterImage"
+            class="image"
+            src="images/snortleblat.webp"
+            alt="Swamp Beast Diplomat">
+
+        <div class="name" id="characterName"></div>
+        <div class="stats">
+            <p><strong>Class:</strong> <span id="characterClass"></span></p>
+            <p><strong>Level:</strong> <span id="characterLevel"></span></p>
+            <p><strong>Health:</strong> <span id="characterHealth"></span></p>
+        </div>
+        <div class="buttons">
+            <button id="attackBtn">Attack</button>
+            <button id="levelBtn">Level Up</button>
+        </div>
+    </div>
+</body>
+</html>
