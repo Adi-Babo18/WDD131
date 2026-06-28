@@ -1,0 +1,86 @@
+h1, h2 {
+    font-family: "Amatic SC", cursive;
+}
+h2 {
+    color: rgb(47, 127, 255)
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+header img {
+    width: 80px;
+    height: auto;
+}
+.description {
+    display: none;
+}
+.search {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.search input {
+    flex: 1;
+    padding: .75rem;
+}
+.search img {
+    width: 20px;
+    height: 20px;
+}
+.tag {
+    display: inline-block;
+    border: 1px solid #999;
+    padding: 0.25rem 0.5rem;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.recipe {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #999;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+.recipe img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
+.recipe-info {
+    padding: 1rem;
+}
+.social {
+    display: flex;
+    gap: 10px;
+}
+.social img {
+    width: 40px;
+    height: 40px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+@media screen and (min-width: 700px) {
+    .recipe {
+        flex-direction: row;
+    }
+    .description {
+        display: block;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,50 @@
+...
+
+For whenever I want to see if my Javascript 
+file is connected:
+I should add in this code to the bottom of my code.
+    console.log("JavaScript is connected!");
+In order to check where that could be to see if 
+Javascript is connected. I open up the website 
+I am working on, go to inspect, and check inside 
+the source box.
+
+...
+
+For a little fun hacking trick to scare people for 
+thinking that I deleted their website and I was 
+able to input a full text through Javascript. 
+Input this code at the bottom of the Javascript 
+to put a message. 
+    const main = document.querySelector("main");
+    console.log(main);
+    main.innerHTML = "<h2>Hello from JavaScript!</h2>";
+
+...
+
+In programming with JavaScript their are times when
+we wont be able to recieve parts that work, so sometimes 
+for code within an "statement =", we wont have to use "", 
+instead to make things work inside we can use ``.
+Example: 
+    main.innerHTML = "<h2>${recipe.name}</h2>"; ❌
+    main.innerHTML = `<h2>${recipe.name}</h2>`; ✔️
+
+...
+
+Ask AI to teach you on how to use this in loops 
+or how to create loops within Javascript.
+    function createRating(rating) {
+        let stars = "";
+        for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+                stars += "⭐";
+            } else {
+                stars += "💫";
+            }
+        }
+        return stars;
+    }
+
+...
+
